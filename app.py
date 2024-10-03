@@ -1,7 +1,9 @@
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
-st.title ("Tablero de dibujo")
+st.title ("¡Dibuja lo que quieras!")
+st.subheader("Utiliza el trablero de dibujo para hacer arte")
+
 
 # Add canvas component
 # Specify canvas parameters in application
@@ -16,7 +18,7 @@ canvas_result = st_canvas(
     stroke_width=stroke_width,
     stroke_color=stroke_color,
     background_color=bg_color,
-    height=200,
-    width=200,
+    height=400,
+    width=400,
     key="canvas",
 )
