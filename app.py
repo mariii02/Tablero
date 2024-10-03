@@ -16,7 +16,8 @@ with st.sidebar:
     ("freedraw", "line", "rect"),
     )
     stroke_width = st.slider('Selecciona el ancho de línea', 1, 30, 15)
-    stroke_color = '#FFFFFF' # Set background color to white
+    stroke_color = st.color_picker("Pick A Color", "#00f900")
+    st.write("Estás usando el color:",  stroke_color)
 
 # Create a canvas component
 canvas_result = st_canvas(
